@@ -1,1 +1,33 @@
 /*  your css code here. If applicable */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.container {
+    margin-top: 50px;
+}
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    justify-content: center;
+    margin-top: 20px;
+}
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: pink;
+}
+.message {
+    font-size: 20px;
+    margin-top: 20px;
+}
+.hidden {
+    display: none;
+}
